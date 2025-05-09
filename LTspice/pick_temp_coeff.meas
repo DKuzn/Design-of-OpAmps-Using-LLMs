@@ -1,0 +1,7 @@
+.param t0 = -40
+.param t1 = 125
+
+.meas op V0 find V(out) when temperature=t0
+.meas op V1 find V(out) when temperature=t1
+
+.meas op temp_coeff param (V1 - V0)/(t1 - t0)
